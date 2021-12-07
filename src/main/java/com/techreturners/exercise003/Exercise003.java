@@ -3,11 +3,17 @@ package com.techreturners.exercise003;
 public class Exercise003 {
 
     int getIceCreamCode(String iceCreamFlavour) {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+        int code = 0;
+        for(int i=0;i<= iceCreamFlavours().length-1;i++){
+            if(iceCreamFlavours()[i].equals(iceCreamFlavour)){
+                 code = i;
+                 }
+             }
+        return code;
     }
 
     String[] iceCreamFlavours() {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+       String[] iceCreamFlavours = {"Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet"};
+       return iceCreamFlavours;
     }
-
 }
