@@ -4,24 +4,20 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        String capitalizedWord = Character.toUpperCase(word.charAt(0))+word.substring(1);
-        return capitalizedWord;
+        return Character.toUpperCase(word.charAt(0))+word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
-        String initials = firstName.charAt(0)+"."+lastName.charAt(0);
-        return initials;
+        return firstName.charAt(0)+"."+lastName.charAt(0);
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        double vat = Math.round((originalPrice + (vatRate/100)*originalPrice)*100.0)/100.0;
-        return vat;
+        return Math.round((originalPrice + (vatRate/100)*originalPrice)*100.0)/100.0;
     }
 
     public String reverse(String sentence) {
         StringBuffer sb = new StringBuffer(sentence);
-        String revString = sb.reverse().toString();
-        return revString;
+        return sb.reverse().toString();
     }
 
     public int countLinuxUsers(List<User> users) {
