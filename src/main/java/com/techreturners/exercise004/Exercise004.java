@@ -8,7 +8,7 @@ import java.time.temporal.ChronoUnit;
 public class Exercise004 {
 
     LocalDateTime dateTime;
-    long gigaSecond =  (long) Math.pow(10,9);
+    long gigaSecond = (long) Math.pow(10, 9);
 
     public Exercise004(LocalDate date) {
         this.dateTime = date.atStartOfDay();
@@ -19,6 +19,6 @@ public class Exercise004 {
     }
 
     public LocalDateTime getDateTime() {
-       return dateTime.plusSeconds(gigaSecond);
+        return dateTime.plusSeconds(gigaSecond);
     }
 }

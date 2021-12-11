@@ -43,7 +43,7 @@ public class Exercise004Test {
     @Test
     public void checkGetDateTimeWithDate() {
 
-        Exercise004 ex004 = new Exercise004(LocalDate.of(2021, Month.AUGUST,10));
+        Exercise004 ex004 = new Exercise004(LocalDate.of(2021, Month.AUGUST, 10));
         LocalDateTime expected = LocalDateTime.of(2053, Month.APRIL, 18, 1, 46, 40);
 
         assertEquals(expected, ex004.getDateTime());

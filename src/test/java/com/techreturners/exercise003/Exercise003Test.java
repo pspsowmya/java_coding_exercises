@@ -42,7 +42,7 @@ public class Exercise003Test {
     @Test
     public void checkPickMultipleIceCreamFlavours() {
 
-        String[] expected = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
+        String[] expected = {"Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet"};
 
         assertEquals(expected, ex003.iceCreamFlavours());
     }
