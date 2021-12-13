@@ -2,13 +2,11 @@ package com.techreturners.exercise004;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Month;
-import java.time.temporal.ChronoUnit;
 
 public class Exercise004 {
 
     LocalDateTime dateTime;
-    long gigaSecond = (long) Math.pow(10, 9);
+    static final long GIGA_SECOND = (long) Math.pow(10, 9);
 
     public Exercise004(LocalDate date) {
         this.dateTime = date.atStartOfDay();
@@ -19,6 +17,6 @@ public class Exercise004 {
     }
 
     public LocalDateTime getDateTime() {
-        return dateTime.plusSeconds(gigaSecond);
+        return dateTime.plusSeconds(GIGA_SECOND);
     }
 }
